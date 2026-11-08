@@ -1,8 +1,8 @@
 {
   "name": "jam-sql",
   "displayName": "Jam SQL Studio",
-  "version": "1.0.0",
-  "description": "Query and inspect SQL Server, PostgreSQL, MySQL, Oracle and SQLite databases through the Jam SQL Studio desktop app. The app keeps the credentials, and each write waits for your approval in its window.",
+  "version": "1.1.0",
+  "description": "Query and inspect SQL Server, PostgreSQL, MySQL, Oracle and SQLite databases from Claude Code through the Jam SQL Studio desktop app and its jam-sql CLI. The app keeps the credentials, and writes never run without your approval in the app.",
   "icon": "./assets/icon.png",
   "author": {
     "name": "Jam SQL Studio",
@@ -20,7 +20,7 @@
     "mysql",
     "oracle",
     "sqlite",
-    "mcp"
+    "cli"
   ],
   "documentationUrl": "https://jamsql.com/docs/ai-integrations-mcp/",
   "supportUrl": "https://jamsql.com/contact/",

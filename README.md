@@ -1,33 +1,22 @@
-# Jam SQL Studio skills and Claude plugin
+# Jam SQL Studio skills and Claude Code plugin
 
-AI integrations for [Jam SQL Studio](https://jamsql.com/), a desktop SQL IDE for SQL Server, PostgreSQL, MySQL and
-MariaDB, Oracle, SQLite and Azure Data Explorer on macOS, Windows and Linux. Both work through the app running on
-your computer: the AI tool never receives connection credentials, and each write waits for your approval in Jam SQL
-Studio.
+[![skills.sh](https://skills.sh/b/jamsql/skills)](https://skills.sh/jamsql/skills/jam-sql)
 
-| | For | What it uses |
+The `jam-sql` agent skill for [Jam SQL Studio](https://jamsql.com/), a desktop SQL IDE for SQL Server, PostgreSQL,
+MySQL and MariaDB, Oracle, SQLite and Azure Data Explorer on macOS, Windows and Linux. The skill teaches an AI agent
+the `jam-sql` command-line tool that ships with the app: list connections, run queries, compare schemas, browse Azure
+Storage, open tabs in the app. The agent never receives connection credentials, and writes never run without your
+approval in Jam SQL Studio.
+
+| | For | Install |
 |---|---|---|
-| [`skills/jam-sql`](skills/jam-sql/SKILL.md) | Any agent that reads skills: Claude Code, Codex, Cursor, Copilot, Gemini CLI and others | The `jam-sql` CLI that ships with the app |
-| [`plugins/jam-sql`](plugins/jam-sql/README.md) | Claude Code | The app's MCP server, plus a skill for its tools |
+| [`skills/jam-sql`](skills/jam-sql/SKILL.md) | Any agent that reads skills: Claude Code, Codex, Cursor, Copilot, Gemini CLI and others | `npx skills add jamsql/skills --skill jam-sql` |
+| [`plugins/jam-sql`](plugins/jam-sql/README.md) | Claude Code, as a plugin (the same skill) | `/plugin marketplace add jamsql/skills`, then `/plugin install jam-sql@jamsql` |
 
-## The `jam-sql` skill
+On first use the agent runs `jam-sql pair`, and you approve the dialog in Jam SQL Studio.
 
-```
-npx skills add jamsql/skills --skill jam-sql
-```
-
-The skill teaches the agent the `jam-sql` commands: list connections, run queries, compare schemas, browse Azure
-Storage, open tabs in the app. On first use the agent runs `jam-sql pair`, and you approve the dialog in Jam SQL
-Studio.
-
-## The Claude Code plugin
-
-```
-/plugin marketplace add jamsql/skills
-/plugin install jam-sql@jamsql
-```
-
-See [plugins/jam-sql/README.md](plugins/jam-sql/README.md) for what it contains and what it reads, sends and runs.
+For MCP clients (Claude Desktop, Cursor, VS Code and others), use the app's MCP server through
+[`@jamsql/mcp`](https://github.com/jamsql/mcp).
 
 ## Requirements
 

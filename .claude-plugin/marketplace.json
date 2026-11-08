@@ -10,7 +10,7 @@
     {
       "name": "jam-sql",
       "source": "./plugins/jam-sql",
-      "description": "Query and inspect your databases through the Jam SQL Studio desktop app. The app keeps the credentials, and each write waits for your approval in its window."
+      "description": "Query and inspect your databases from Claude Code through the Jam SQL Studio desktop app and its jam-sql CLI. The app keeps the credentials, and writes never run without your approval in the app."
     }
   ]
 }
