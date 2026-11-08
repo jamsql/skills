@@ -1,0 +1,16 @@
+{
+  "name": "jamsql",
+  "description": "Jam SQL Studio plugins for Claude Code",
+  "owner": {
+    "name": "Jam SQL Studio",
+    "email": "support@jamsql.com",
+    "url": "https://jamsql.com"
+  },
+  "plugins": [
+    {
+      "name": "jam-sql",
+      "source": "./plugins/jam-sql",
+      "description": "Query and inspect your databases through the Jam SQL Studio desktop app. The app keeps the credentials, and each write waits for your approval in its window."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "jam-sql",
+  "displayName": "Jam SQL Studio",
+  "version": "1.0.0",
+  "description": "Query and inspect SQL Server, PostgreSQL, MySQL, Oracle and SQLite databases through the Jam SQL Studio desktop app. The app keeps the credentials, and each write waits for your approval in its window.",
+  "icon": "./assets/icon.png",
+  "author": {
+    "name": "Jam SQL Studio",
+    "email": "support@jamsql.com",
+    "url": "https://jamsql.com"
+  },
+  "homepage": "https://jamsql.com/docs/ai-integrations-mcp/",
+  "repository": "https://github.com/jamsql/skills",
+  "license": "MIT",
+  "keywords": [
+    "sql",
+    "database",
+    "sql-server",
+    "postgresql",
+    "mysql",
+    "oracle",
+    "sqlite",
+    "mcp"
+  ],
+  "documentationUrl": "https://jamsql.com/docs/ai-integrations-mcp/",
+  "supportUrl": "https://jamsql.com/contact/",
+  "privacyPolicyUrl": "https://jamsql.com/legal/privacy-policy/"
+}

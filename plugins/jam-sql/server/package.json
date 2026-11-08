@@ -1,0 +1,41 @@
+{
+  "name": "@jamsql/mcp",
+  "version": "1.0.1",
+  "description": "Connect Claude Desktop, Cursor, VS Code and other stdio MCP clients to Jam SQL Studio's local MCP server.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "sql",
+    "database",
+    "sql-server",
+    "postgresql",
+    "mysql",
+    "oracle",
+    "sqlite",
+    "claude-desktop",
+    "jam-sql"
+  ],
+  "homepage": "https://jamsql.com/docs/ai-integrations-mcp/",
+  "bugs": {
+    "email": "support@jamsql.com"
+  },
+  "author": "Jam SQL Studio <support@jamsql.com>",
+  "license": "MIT",
+  "mcpName": "com.jamsql/jam-sql-studio",
+  "bin": {
+    "jamsql-mcp": "dist/cli.js"
+  },
+  "files": [
+    "dist/**/*.js",
+    "!dist/**/*.test.js"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\" && tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepack": "npm run build"
+  }
+}
