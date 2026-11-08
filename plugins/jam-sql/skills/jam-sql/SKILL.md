@@ -1,8 +1,6 @@
 ---
 name: jam-sql
 description: Use Jam SQL Studio to query SQL databases, list connections, compare schemas, and explore data via the jam-sql CLI.
-globs:
-  - "**/*.sql"
 ---
 
 # Jam SQL Studio

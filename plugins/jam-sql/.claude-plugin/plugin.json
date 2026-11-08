@@ -1,7 +1,7 @@
 {
   "name": "jam-sql",
   "displayName": "Jam SQL Studio",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Query and inspect SQL Server, PostgreSQL, MySQL, Oracle and SQLite databases from Claude Code through the Jam SQL Studio desktop app and its jam-sql CLI. The app keeps the credentials, and writes never run without your approval in the app.",
   "icon": "./assets/icon.png",
   "author": {
